@@ -6,6 +6,8 @@ package com.microsoft.graph.requests.extensions;
 import com.microsoft.graph.requests.extensions.ICloudCommunicationsRequest;
 import com.microsoft.graph.requests.extensions.ICallCollectionRequestBuilder;
 import com.microsoft.graph.requests.extensions.ICallRequestBuilder;
+import com.microsoft.graph.callrecords.requests.extensions.ICallRecordCollectionRequestBuilder;
+import com.microsoft.graph.callrecords.requests.extensions.ICallRecordRequestBuilder;
 import com.microsoft.graph.requests.extensions.IOnlineMeetingCollectionRequestBuilder;
 import com.microsoft.graph.requests.extensions.IOnlineMeetingRequestBuilder;
 
@@ -38,6 +40,10 @@ public interface ICloudCommunicationsRequestBuilder extends IRequestBuilder {
     ICallCollectionRequestBuilder calls();
 
     ICallRequestBuilder calls(final String id);
+
+    ICallRecordCollectionRequestBuilder callRecords();
+
+    ICallRecordRequestBuilder callRecords(final String id);
 
     IOnlineMeetingCollectionRequestBuilder onlineMeetings();
 
