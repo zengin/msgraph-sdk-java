@@ -32,7 +32,7 @@ public interface ICloudCommunicationsRequestBuilder extends IRequestBuilder {
      * @param requestOptions the options for this request
      * @return the ICloudCommunicationsRequest instance
      */
-    ICloudCommunicationsRequest buildRequest(final java.util.List<? extends Option> requestOptions);
+    ICloudCommunicationsRequest buildRequest(final java.util.List<? extends com.microsoft.graph.options.Option> requestOptions);
 
 
     ICallCollectionRequestBuilder calls();

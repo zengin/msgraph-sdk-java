@@ -38,7 +38,7 @@ public interface IPolicyRootRequestBuilder extends IRequestBuilder {
      * @param requestOptions the options for this request
      * @return the IPolicyRootRequest instance
      */
-    IPolicyRootRequest buildRequest(final java.util.List<? extends Option> requestOptions);
+    IPolicyRootRequest buildRequest(final java.util.List<? extends com.microsoft.graph.options.Option> requestOptions);
 
 
     IActivityBasedTimeoutPolicyCollectionRequestBuilder activityBasedTimeoutPolicies();
